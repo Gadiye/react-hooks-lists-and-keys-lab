@@ -1,3 +1,4 @@
+// src/components/App.js
 import React from "react";
 import NavBar from "./NavBar";
 import Home from "./Home";
@@ -10,7 +11,7 @@ function App() {
     <div>
       <NavBar />
       <Home username={user.name} city={user.city} color={user.color} />
-      <About bio={user.bio} links={user.links} />
+      <About bio={user.bio} github={user.links.github} linkedin={user.links.linkedin} />
       <ProjectList projects={user.projects} />
     </div>
   );
